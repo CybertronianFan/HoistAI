@@ -1,16 +1,19 @@
 # HoistAI
 
-Hoist AI is my personal project to make an accessible AI to teach me and other people about computers.
+Hoist AI is my personal project to make an accessible AI to teach me and other people about computers and how to build them. 
 
 ### Some setup information:
 
 Python version - 3.11.14
 
 
+
 PyTorch version - 2.11.0
 
 
+
 Hugging Face transformers - 5.0.0
+
 
 
 Hugging Face Hub - 1.3.5
