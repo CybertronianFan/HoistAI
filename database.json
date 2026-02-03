@@ -1,0 +1,68 @@
+{
+  "CPU": [
+    {
+      "name": "Ryzen 5 5500",
+      "price_gbp": 120,
+      "socket": "AM4"
+    },
+    {
+      "name": "Ryzen 7 5700X",
+      "price_gbp": 250,
+      "socket": "AM4"
+    },
+    {
+      "name": "Intel Core i5-12400F",
+      "price_gbp": 140,
+      "socket": "LGA1700"
+    },
+    {
+      "name": "Intel Core i7-12700K",
+      "price_gbp": 320,
+      "socket": "LGA1700"
+    }
+  ],
+  "GPU": [
+    {
+      "name": "RTX 5060",
+      "price_gbp": 300,
+      "vram_gb": 8
+    },
+    {
+      "name": "RTX 4070",
+      "price_gbp": 500,
+      "vram_gb": 12
+    },
+    {
+      "name": "RX 6700 XT",
+      "price_gbp": 400,
+      "vram_gb": 12
+    },
+    {
+      "name": "RX 7600",
+      "price_gbp": 280,
+      "vram_gb": 8
+    }
+  ],
+  "RAM": [
+    {
+      "storage_gb": 16,
+      "price_gbp": 115,
+      "platform": "DDR4"
+    },
+    {
+      "storage_gb": 32,
+      "price_gbp": 220,
+      "platform": "DDR4"
+    },
+    {
+      "storage_gb": 16,
+      "price_gbp": 130,
+      "platform": "DDR5"
+    },
+    {
+      "storage_gb": 32,
+      "price_gbp": 250,
+      "platform": "DDR5"
+    }
+  ]
+}
