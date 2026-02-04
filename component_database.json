@@ -2,67 +2,186 @@
   "CPU": [
     {
       "name": "Ryzen 5 5500",
-      "price_gbp": 120,
-      "socket": "AM4"
+      "socket": "AM4",
+      "cores": 6,
+      "threads": 12,
+      "supported_ram": ["DDR4"],
+      "price_gbp": 85
     },
     {
       "name": "Ryzen 7 5700X",
-      "price_gbp": 250,
-      "socket": "AM4"
+      "socket": "AM4",
+      "cores": 8,
+      "threads": 16,
+      "supported_ram": ["DDR4"],
+      "price_gbp": 165
+    },
+    {
+      "name": "Ryzen 9 5900X",
+      "socket": "AM4",
+      "cores": 12,
+      "threads": 24,
+      "supported_ram": ["DDR4"],
+      "price_gbp": 250
+    },
+    {
+      "name": "Ryzen 9 5950X",
+      "socket": "AM4",
+      "cores": 16,
+      "threads": 32,
+      "supported_ram": ["DDR4"],
+      "price_gbp": 315
     },
     {
       "name": "Intel Core i5-12400F",
-      "price_gbp": 140,
-      "socket": "LGA1700"
+      "socket": "LGA1700",
+      "cores": 6,
+      "threads": 12,
+      "supported_ram": ["DDR4", "DDR5"],
+      "price_gbp": 135
     },
     {
       "name": "Intel Core i7-12700K",
-      "price_gbp": 320,
-      "socket": "LGA1700"
+      "socket": "LGA1700",
+      "cores": 12,
+      "threads": 20,
+      "supported_ram": ["DDR4", "DDR5"],
+      "price_gbp": 215
+    },
+    {
+      "name": "Intel Core i9-12900K",
+      "socket": "LGA1700",
+      "cores": 16,
+      "threads": 24,
+      "supported_ram": ["DDR4", "DDR5"],
+      "price_gbp": 260
+    },
+    {
+      "name": "Intel Core i3-12100",
+      "socket": "LGA1700",
+      "cores": 4,
+      "threads": 8,
+      "supported_ram": ["DDR4", "DDR5"],
+      "price_gbp": 132
+    },
+    {
+      "name": "Ryzen 5 7600X",
+      "socket": "AM5",
+      "cores": 6,
+      "threads": 12,
+      "supported_ram": ["DDR5"],
+      "price_gbp": 180
+    },
+    {
+      "name": "Ryzen 7 7700X",
+      "socket": "AM5",
+      "cores": 8,
+      "threads": 16,
+      "supported_ram": ["DDR5"],
+      "price_gbp": 0
+    },
+    {
+      "name": "Ryzen 9 7900X",
+      "socket": "AM5",
+      "cores": 12,
+      "threads": 24,
+      "supported_ram": ["DDR5"],
+      "price_gbp": 0
     }
   ],
   "GPU": [
     {
       "name": "RTX 5060",
-      "price_gbp": 300,
-      "vram_gb": 8
+      "vram_gb": 8,
+      "price_gbp": 0
     },
     {
       "name": "RTX 4070",
-      "price_gbp": 500,
-      "vram_gb": 12
+      "vram_gb": 12,
+      "price_gbp": 0
     },
     {
       "name": "RX 6700 XT",
-      "price_gbp": 400,
-      "vram_gb": 12
+      "vram_gb": 12,
+      "price_gbp": 0
     },
     {
       "name": "RX 7600",
-      "price_gbp": 280,
-      "vram_gb": 8
+      "vram_gb": 8,
+      "price_gbp": 0
+    },
+    {
+      "name": "RTX 4080",
+      "vram_gb": 16,
+      "price_gbp": 0
+    },
+    {
+      "name": "RTX 4090",
+      "vram_gb": 24,
+      "price_gbp": 0
+    },
+    {
+      "name": "RX 6800",
+      "vram_gb": 16,
+      "price_gbp": 0
+    },
+    {
+      "name": "RX 6900 XT",
+      "vram_gb": 16,
+      "price_gbp": 0
+    },
+    {
+      "name": "RTX 3050",
+      "vram_gb": 8,
+      "price_gbp": 0
+    },
+    {
+      "name": "GTX 1660 Super",
+      "vram_gb": 6,
+      "price_gbp": 0
+    },
+    {
+      "name": "RTX 4060 Ti",
+      "vram_gb": 8,
+      "price_gbp": 0
     }
   ],
   "RAM": [
     {
-      "storage_gb": 16,
-      "price_gbp": 115,
-      "platform": "DDR4"
+      "name": "16GB DDR4",
+      "capacity_gb": 16,
+      "platform": "DDR4",
+      "price_gbp": 0
     },
     {
-      "storage_gb": 32,
-      "price_gbp": 220,
-      "platform": "DDR4"
+      "name": "32GB DDR4",
+      "capacity_gb": 32,
+      "platform": "DDR4",
+      "price_gbp": 0
     },
     {
-      "storage_gb": 16,
-      "price_gbp": 130,
-      "platform": "DDR5"
+      "name": "64GB DDR4",
+      "capacity_gb": 64,
+      "platform": "DDR4",
+      "price_gbp": 0
     },
     {
-      "storage_gb": 32,
-      "price_gbp": 250,
-      "platform": "DDR5"
+      "name": "16GB DDR5",
+      "capacity_gb": 16,
+      "platform": "DDR5",
+      "price_gbp": 0
+    },
+    {
+      "name": "32GB DDR5",
+      "capacity_gb": 32,
+      "platform": "DDR5",
+      "price_gbp": 0
+    },
+    {
+      "name": "64GB DDR5",
+      "capacity_gb": 64,
+      "platform": "DDR5",
+      "price_gbp": 0
     }
   ]
 }

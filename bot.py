@@ -6,6 +6,33 @@ with open ("component_database.json") as f:
 
 Model_Name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
+cpu_budget = int(input("Enter your CPU budget (GBP): "))
+gpu_budget = int(input("Enter your GPU budget (GBP): "))
+ram_budget = int(input("Enter your RAM budget (GBP): "))
+
+chosen_cpu = None
+for cpu in components["CPU"]:
+    if cpu["price_gbp"] <= cpu_budget:
+        chosen_cpu = cpu
+        break
+
+chosen_gpu = None
+for gpu in components["GPU"]:
+    if gpu["price_gbp"] <= gpu_budget:
+        chosen_gpu = gpu
+        break
+
+chosen_ram = None
+for ram in components["RAM"]:
+    if ram["price_gbp"] <= ram_budget:
+        chosen_ram = ram
+        break
+
+if not chosen_cpu or not chosen_gpu or not chosen_ram:
+    print("Could not select all parts within budget.")
+    exit()
+
+
 # This is the prompt to tell the system what its job is 
 System_Prompt = f"""
 You are Hoist, a PC Builder Advisor AI.
@@ -15,7 +42,7 @@ Your job is to explain to the user their PC parts in detail.
 Here are the chosen parts:
 CPU: {chosen_cpu['name']} (£{chosen_cpu['price_gbp']})
 GPU: {chosen_gpu['name']} (£{chosen_gpu['price_gbp']})
-RAM: {chosen_ram['storage_gb']}GB {chosen_ram.get('platform', '')} (£{chosen_ram['price_gbp']})
+RAM: {chosen_ram['capacity_gb']}GB {chosen_ram.get('platform', '')} (£{chosen_ram['price_gbp']})
 
 You MUST do the following for each component:
 
